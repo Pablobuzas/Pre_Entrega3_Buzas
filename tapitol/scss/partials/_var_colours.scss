@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+/*Color o Imagen Body*/
+$FondoBody: #6c9dce;
+$FondoDegradeBody: radial-gradient(ellipse at top, #6083ae, transparent), radial-gradient(ellipse at bottom, #000000, transparent);;
+$FondoImagenBodyGradient: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("../img/fondo01.jpg");
+$FondoImagenBody: url("../img/fondo01.jpg");
+
+/*Colores Menu */
+$FondoMenu: #cdb6b617;
+$FondoImagenMenu: radial-gradient(circle at right top, #00000017, #212529, #0e3d7a);
+$TextoBotonesMenu: #ffffff;
+$FondoBotonActivadoMenu: #9494d6;
+$TextoBotonesActivadoMenu: #ffffff;
+$transicionBotonMenu: 1.5s;
+
+/*Colores Menu Mobile*/
+$Boton3rayitas: #ffffff;
+$FondoMenuMobile:#0e1133cc;
+$TextoMenuMobile: #ffffff;
+$FondoImagenMenuMobile: radial-gradient(circle at right top, #c3ec50, #212529, #037409);
+
+/*Colores Tarjetas */
+$TituloTarjeta: #fff;
+$SombraTituloTarjeta: -6px 8px 10px #7fff07;
+$FondoTarjeta: #000000;
+$SombraTarjeta: 0px 1px 10px #00000033;
+$BordeTarjeta: #09ee0934;
+
+
+$SombraHoverTarjeta: 10px 10px 30px #60f80775;
+$FondoHoverTitulo: #001aff;
+
+$SubtituloTarjeta: #953333;
+$SombraSubtituloTarjeta: -6px 8px 10px rgb(127, 255, 7);
+
+$ParrafoTarjeta: #fff;
+$BordesTablaTarjeta: #28c928;
+$TextoTablaTarjeta: #fff;
+
+
+$BotonFondoTarjeta: #2fb4cc;
+$BotonBordeTarjeta: #7e987e;
+$BotonHoverFondoTarjeta:  #09ee09;
+$BotonHoverTextoTarjeta: #000000;;
+
+
+/*Colores Tarjetas generadas con Ciclos*/
+$coloresBox: (
+    Color01: #91a5afe5,
+    Color02: #877cb0,
+    Color03: #444743,
+   
+);
+
+$coloresBtnRedes: (
+    facebook: #3f0feef1,
+    instagram: #4e417c,
+    linkedin: #5ba2f3,
+    whatsapp: #13a30e,
+    
+);
+
+
+
+
+

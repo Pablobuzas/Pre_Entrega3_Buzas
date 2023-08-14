@@ -1,0 +1,91 @@
+@media (max-width: 860px){
+	main {
+		@include mainpadding (1rem, 1rem, 6rem, 4rem) /*gap, padding, padding-top, padding-bottom*/
+		
+	}
+		
+	.container-card{
+		@include containercard(wrap, inherit); /*flex-wrap, position*/
+	}
+	
+    .card img{
+		width: $AnchoImagenTarjetas;
+		height: $AltoImagenTarjetas;
+		text-align: center;
+    }
+
+    .container-grid {
+
+		@include containergrid(1fr 1fr, auto, auto); /*grid-template-column, grid-template-rows, height*/
+
+        grid-template-areas: 
+            "Box01  Box01   "
+            "Box02  Box03   "
+            "Box04  Box05   ";
+    }
+
+	.checkbtn{
+	    display: block;
+	}
+
+  	#check:checked ~ ul{
+    		left:0;
+ 	}
+
+	nav {
+		background-image: $FondoImagenMenuMobile;
+
+			& ul {
+				position: absolute;
+				width: 100%;
+				height: 100vh;
+				background: $FondoMenuMobile;
+				top: $paddingMenu;
+				left: -100%;
+				text-align: center;
+				transition: all .5s;
+				z-index: 20 ;
+		
+			& li {
+				@include nav-li(block, 3rem, 3rem); /*display, margin, line-height*/
+		
+
+
+			}  
+		}
+	}
+}
+
+@media (max-width: 576px){
+
+		main {
+			@include mainpadding (2rem, 0.5rem, 6rem, 4rem) /*gap, padding, padding-top, padding-bottom*/
+		}
+        .container-card{
+            display: flex;
+			@include containercard(wrap, inherit); /*flex-wrap, position*/
+        }
+
+        .card img{
+            display: none;
+        }
+
+		.container-grid {
+			@include containergrid(1fr, auto, auto); /*grid-template-column, grid-template-rows, height*/
+
+			grid-template-areas: 
+				"Box01"
+				"Box02"
+				"Box03"
+				"Box04"
+				"Box05";
+		}
+
+        .checkbtn{
+        	display: block;
+        }
+ 
+        #check:checked ~ ul{
+            left:0;
+        }
+}
